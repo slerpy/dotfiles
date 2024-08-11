@@ -1,0 +1,18 @@
+#!/usr/bin/env dash
+
+alias datetime="date +%H:%M"
+
+echo "What time is it in _______?"
+echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+echo 'UTC\t' `TZ="Etc/UTC" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Mumbai:' `TZ="Asia/Calcutta" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Paris:' `TZ="Europe/Paris" date +"%-I:%M%p :: %-m/%-d"`
+echo 'NYC:' `TZ="America/New_York" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Tokyo:' `TZ="Asia/Tokyo" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Virgin Islands:' `TZ="America/St_Thomas" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Minneapolis:' `TZ="America/Chicago" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Reijkjavik:' `TZ="Europe/Reijkjavik" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Melbourne:' `TZ="Australia/Melbourne" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Berlin:' `TZ="Europe/Berlin" date +"%-I:%M%p :: %-m/%-d"`
+echo 'Seoul:' `TZ="Asia/Seoul" date +"%-I:%M%p :: %-m/%-d"`
+echo '----------------------------------'

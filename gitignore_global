@@ -1,0 +1,103 @@
+### DONT FORGET TO DO...
+### git config --global core.excludesfile=/path/to/.gitignore
+
+
+##
+# scratch files 
+##
+
+scratch
+scratch.*
+
+
+
+##
+# Various OS files
+##
+
+.DS_Store
+.DS_Store?
+.AppleDouble
+.AppleDB
+.AppleDesktop
+.apdisk
+.LSOverride
+ICON
+._*
+.VolumeIcon.icns
+.TemporaryItems
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.Trash-*
+.directory
+*~
+
+
+
+##
+# Databases
+##
+
+.sql
+.sqlite
+
+
+
+##
+# various IDE Files
+##
+
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+_notes
+dwsync.xml
+*.iml
+.idea/
+/out/
+atlassian-ide-plugin.xml
+nbproject/private/
+build/
+nbbuilg/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+
+
+##
+# Drupal
+##
+
+sites/*/*settings*.php
+sites/*/private
+
+
+
+##
+# Joomla
+##
+
+administrator/
+cache/*
+logs/
+configuration.php
+tmp/
+
+
+
+##
+# Wordpress
+##
+
+*.log
+sitemap.xml
+sitemap.xml.gz
+wp-config.php

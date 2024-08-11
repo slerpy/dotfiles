@@ -1,0 +1,49 @@
+# bash aliases to be loaded by .bashrc
+# some mac specific to maximize portability
+
+# alias newpy="~/.dotfiles/.boilerplater boilerplate-python"
+# alias newbash="~/.dotfiles/.boilerplater boilerplate-bash"
+alias clean='history -c; clear'
+alias ls='ls --color -a -h --group-directories-first' # directories first
+alias ll='ls -l'
+alias la='ls -a'
+alias las='ls -al'
+alias ..='cd ..'
+alias timez="~/.dotfiles/world_time"
+
+# uncomment below for arch specific
+
+# alias syu='pacaur -Syu'
+# alias pacs='pacaur -Ss'
+# alias paci='pacaur -S'
+
+alias drives='df -h'
+alias record="ffmpeg -f x11grab -s 1920x1080 -r 25 -i :0.0 -f alsa -i hw:0,0 -strict -2"
+
+
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias speedtest='curl -o /dev/null http://cachefly.cachefly.net/100mb.test; true'
+alias snitch='sudo nmap -sP $NETWRK && echo "*** Further details in ~ One Minute, Please Wait ..." && sudo nmap -sP $NETWRK'
+alias dates="date +%H:%M"
+
+#
+# macos specific
+#
+
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+
+
+# rarely used, but due to some twisted combo of cubscouts and http://xkcd.com/530/ it remains.
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume output volume 100'"
+
+
+# go afk, lock screen
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+
+
+
