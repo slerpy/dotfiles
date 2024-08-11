@@ -4,6 +4,7 @@
 # alias newpy="~/.dotfiles/.boilerplater boilerplate-python"
 # alias newbash="~/.dotfiles/.boilerplater boilerplate-bash"
 alias clean='history -c; clear'
+alias sudo='sudo '
 alias ls='ls --color -a -h --group-directories-first' # directories first
 alias ll='ls -l'
 alias la='ls -a'
@@ -13,10 +14,8 @@ alias mv='mv -v'
 alias rm='rm -i -v'
 alias ..='cd ..'
 alias chmox='chmod -x'
-
-
-
-alias timez="~/.dotfiles/world_time"
+alias timez='~/.dotfiles/world_time'
+alias wthr='curl wttr.in/Portland' #maybe do something like alias weather='curl wttr.in/$CITY' instead?
 
 # uncomment below for arch specific
 
@@ -26,12 +25,13 @@ alias timez="~/.dotfiles/world_time"
 
 alias drives='df -h'
 alias record="ffmpeg -f x11grab -s 1920x1080 -r 25 -i :0.0 -f alsa -i hw:0,0 -strict -2"
-
-
+alias ytv="yt-dlp -f 'bestvideo+bestaudio/best'"
+alias yta="yt-dlp -x -f 'bestaudio/best' --audio-format mp3"
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias myintip="ip a | grep "scope" | grep -Po '(?<=inet )[\d.]+'"
 alias speedtest='curl -o /dev/null http://cachefly.cachefly.net/100mb.test; true'
-alias snitch='sudo nmap -sP $NETWRK && echo "*** Further details in ~ One Minute, Please Wait ..." && sudo nmap -sP $NETWRK'
-alias dates="date +%H:%M"
+alias snitch='sudo nmap -sP $NETWRK && echo "*** Further details in ~ One Minute, Please Wait ..."'
+alias dates='date +%H:%M'
 
 #
 # macos specific

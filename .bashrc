@@ -1,3 +1,9 @@
+# i mean, obviously...
+function cheat() {
+      curl cht.sh/$1
+}
+
+
 # Shortcut to get the disk size of a directory and contents
 sizeof() {
     du -ch "$1" | grep total
@@ -25,7 +31,7 @@ else
 fi
 }
 
-
+# whois query...
 function whois() {
 	local domain=$(echo "$1" | awk -F/ '{print $3}') # get domain from URL
 	if [ -z $domain ] ; then
@@ -53,6 +59,7 @@ gifify() {
   fi
 }
 use_color=true
+
 
 # Set colorful PS1 only on colorful terminals.
 # dircolors --print-database uses its own built-in database
