@@ -12,7 +12,7 @@ source .dotfiles/.bashrc
 source .dotfiles/.aliases
 source ~/.dotfiles/git-completion.bash
 source ~/.dotfiles/git-prompt.sh
-```
+
 
 # keep environment variables in a ~/.secrets
 # when appropriate, don't forget to copy those secrets to new system.
@@ -22,3 +22,4 @@ source ~/.dotfiles/git-prompt.sh
 #
 #  ~/.gitconfig
 #  ~/.secret
+```
